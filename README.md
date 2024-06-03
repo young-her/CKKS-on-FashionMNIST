@@ -1,2 +1,5 @@
 # CKKS-on-FashionMNIST
 基于tenseal库的CKKS方案评估FashionMNIST数据集
+1conv2fc是基于一卷积层两线性层构建的网络
+collapsing linear layer是为了让网络能多出一层卷积层来提高模型的精确度，同时和一个线性层合并为一个全新的线性层，既降低了同态运算的开销，也能提高模型精度
+## 参考文献
